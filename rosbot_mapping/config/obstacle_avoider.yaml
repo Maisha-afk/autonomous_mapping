@@ -1,0 +1,12 @@
+obstacle_avoider:
+  ros__parameters:
+    min_obstacle_distance: 0.4  # Keep at least 40cm distance
+    max_obstacle_distance: 2.0  # Only consider obstacles within 2m
+    obstacle_threshold: 0.6    # If obstacle distance < 0.5m, trigger avoidance
+    forward_speed: 0.15         # 0.2 m/s
+    turn_speed: 0.6             # rad/s
+    emergency_stop_distance: 0.2 # Stop immediately if obstacle closer than this
+    laser_scan_topic: /scan
+    cmd_vel_topic: /cmd_vel
+    robot_frame: base_link
+    obstacle_angle_range: 120   # Degrees left/right to check for obstacles, it was 90
