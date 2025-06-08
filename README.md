@@ -1,5 +1,5 @@
 # Autonomous Mapping and Navigation
-In one package I have kept both the autonomous mapping and navigation part. Explore lite isnt supported int ROS2 Jazzy and even in python there is no frontier exploration module.Slam toolbox, frontier search and obstacle avoider are used for autonomous mapping. Obstacle avoider isnt working properly, it needs tuning.For navigation, RRT algorithm and pure pursuit used. 
+In one package I have kept both the autonomous mapping and navigation part. Explore lite isn't supported on ROS2 Jazzy and neither in python there is frontier exploration module.Slam toolbox, frontier search and obstacle avoider are used for autonomous mapping. Obstacle avoider isnt working properly, it needs tuning.For navigation, RRT algorithm and pure pursuit used. 
 ## Autonomous mapping of unkown area
 ## Installation
 ```bash
