@@ -1,6 +1,5 @@
 # Autonomous Mapping and Navigation
-In one package I have kept both the autonomous mapping and navigation part. Slam toolbox, frontier search and obstacle avoider are used for autonomous mapping. Obstacle avoider isnt working properly, it needs tuning.
-For navigation, RRT algorithm and pure pursuit used.
+In one package I have kept both the autonomous mapping and navigation part. Explore lite isnt supported int ROS2 Jazzy and even in python there is no frontier exploration module.Slam toolbox, frontier search and obstacle avoider are used for autonomous mapping. Obstacle avoider isnt working properly, it needs tuning.For navigation, RRT algorithm and pure pursuit used. 
 ## Autonomous mapping of unkown area
 ## Installation
 ```bash
@@ -62,7 +61,8 @@ cd ~/rosbot_ws
 source install/setup.bash
 ros2 launch rosbot_mapping navigation.launch.py
 ```
-In the rviz, select path, rrt_path, costmap. Using 2d goal pose navigate to the desired position
+
+In the rviz, select path, rrt_path, costmap. Using 2d goal pose navigate to the desired position.
 
 
 
